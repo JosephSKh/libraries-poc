@@ -14,6 +14,6 @@ export class AppComponent implements OnInit {
   title = 'My Great Angular Application';
   
   ngOnInit(): void {
-    this.title = Utils.addWorld(this.title);
+    this.title = Utils.addWorld(this.title, new Date());
   }
 }

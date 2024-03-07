@@ -1,7 +1,6 @@
 import { UtilsB } from 'modb';
 export class Utils {
-    // @ts-ignore
-    public static addWorld(val) {
-        return UtilsB.addHello(`${val} World`);
+    public static addWorld(val: string, date: Date) {
+        return UtilsB.addHello(`${val} World`, date);
     }
 };
